@@ -3,25 +3,23 @@ package model;
 import java.util.Objects;
 
 public class Car {
-        private String cor;
         private String marca;
         private String modelo;
         private Boolean ligado;
         private Integer velocidadeAtual;
         private Integer velocidadeMaxima;
+        private Boolean trancado;
 
-    public Car(String cor, String marca, String modelo) {
-        this.cor = cor;
+    public Car(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
-
     public Car() {
             this.velocidadeAtual = 0;
             this.ligado = false;
             this.velocidadeMaxima = 200;
+            this.trancado = true;
         }
-
         public void ligar() {
             this.ligado = true;
         }
@@ -41,59 +39,28 @@ public class Car {
 
         public void frear(Integer velocidade) {
             this.velocidadeAtual -= velocidade;
-            if (this.velocidadeAtual - velocidade <= 0){
-                this.velocidadeAtual = 0;
-            }else {
-                this.velocidadeAtual = this.velocidadeAtual - velocidade;
+            this.velocidadeAtual = Math.max(this.velocidadeAtual - velocidade, 0);
+        }
+
+        public void trancar(){
+        if(trancado == true) {
+                System.out.println("Ja esta trancado");
+            } else {
+                trancado = true;
             }
         }
 
-        public String getCor() {
-            return cor;
-        }
-
-        public void setCor(String cor) {
-            this.cor = cor;
-        }
-
-        public String getMarca() {
-            return marca;
-        }
-
-        public void setMarca(String marca) {
-            this.marca = marca;
-        }
-
-        public String getModelo() {
-            return modelo;
-        }
-
-        public void setModelo(String modelo) {
-            this.modelo = modelo;
-        }
 
         public Boolean getLigado() {
             return ligado;
-        }
-
-        public void setLigado(Boolean ligado) {
-            this.ligado = ligado;
         }
 
         public Integer getVelocidadeAtual() {
             return velocidadeAtual;
         }
 
-        public void setVelocidadeAtual(Integer velocidadeAtual) {
-            this.velocidadeAtual = velocidadeAtual;
-        }
-
-        public Integer getVelocidadeMaxima() {
-            return velocidadeMaxima;
-        }
-
-        public void setVelocidadeMaxima(Integer velocidadeMaxima) {
-            this.velocidadeMaxima = velocidadeMaxima;
+        public Boolean getTrancado() {
+        return trancado;
         }
 
     @Override

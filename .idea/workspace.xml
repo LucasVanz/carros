@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="262aaf5d-44fb-4a3d-a173-5d32c62e0c51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/simple-it/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/simple-it/verify.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CarroTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PraticandoAssertivas.java" afterDir="false" />
+    <list default="true" id="262aaf5d-44fb-4a3d-a173-5d32c62e0c51" name="Changes" comment="exercicio">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exception/AceleracaoNegativaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/CarroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/CarroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PraticandoAssertivas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/PraticandoAssertivas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +28,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LucasVanz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d2df852f-2020-4559-b9f2-5aea7bd7ed97" />
+        <option name="url" value="https://github.com/LucasVanz/carros.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -44,69 +60,104 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.PraticandoAssertivas.praticandoAssertEquals_detalhes_nas_strings">
-    <configuration name="PraticandoAssertivas.praticandoAssertArrayEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="carros" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PraticandoAssertivas" />
-      <option name="METHOD_NAME" value="praticandoAssertArrayEquals" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CarroTest">
+    <configuration name="CarroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testes_automatizados_carros_aulos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CarroTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarroTest.deveAcelerarCorretamente (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testes_automatizados_carros_aulos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CarroTest" />
+      <option name="METHOD_NAME" value="deveAcelerarCorretamente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PraticandoAssertivas.praticandoAssertEquals_detalhes_nas_strings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarroTest.deveDesligarCorretamenteUmCarroLigado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="carros" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PraticandoAssertivas" />
-      <option name="METHOD_NAME" value="praticandoAssertEquals_detalhes_nas_strings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CarroTest" />
+      <option name="METHOD_NAME" value="deveDesligarCorretamenteUmCarroLigado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PraticandoAssertivas.praticandoAssertEquals_objeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="carros" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PraticandoAssertivas" />
-      <option name="METHOD_NAME" value="praticandoAssertEquals_objeto" />
+    <configuration name="CarroTest.deveLigarCorretamente (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testes_automatizados_carros_aulos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CarroTest" />
+      <option name="METHOD_NAME" value="deveLigarCorretamente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PraticandoAssertivas.praticandoAssertEquals_primitivos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarroTest.deveLigarCorretamente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="carros" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PraticandoAssertivas" />
-      <option name="METHOD_NAME" value="praticandoAssertEquals_primitivos" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PraticandoAssertivas.praticandoAssertFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="carros" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PraticandoAssertivas" />
-      <option name="METHOD_NAME" value="praticandoAssertFalse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CarroTest" />
+      <option name="METHOD_NAME" value="deveLigarCorretamente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PraticandoAssertivas.praticandoAssertEquals_detalhes_nas_strings" />
-        <item itemvalue="JUnit.PraticandoAssertivas.praticandoAssertEquals_objeto" />
-        <item itemvalue="JUnit.PraticandoAssertivas.praticandoAssertEquals_primitivos" />
-        <item itemvalue="JUnit.PraticandoAssertivas.praticandoAssertArrayEquals" />
-        <item itemvalue="JUnit.PraticandoAssertivas.praticandoAssertFalse" />
+        <item itemvalue="JUnit.CarroTest" />
+        <item itemvalue="JUnit.CarroTest.deveLigarCorretamente (1)" />
+        <item itemvalue="JUnit.CarroTest.deveAcelerarCorretamente (1)" />
+        <item itemvalue="JUnit.CarroTest.deveLigarCorretamente" />
+        <item itemvalue="JUnit.CarroTest.deveDesligarCorretamenteUmCarroLigado" />
       </list>
     </recent_temporary>
   </component>
@@ -132,8 +183,22 @@
       <updated>1698708108676</updated>
       <workItem from="1698708110305" duration="3694000" />
       <workItem from="1698876721640" duration="3270000" />
-      <workItem from="1699308987721" duration="6871000" />
+      <workItem from="1699308987721" duration="8814000" />
+      <workItem from="1699482308744" duration="1717000" />
+      <workItem from="1699660354636" duration="3010000" />
+      <workItem from="1699914489266" duration="1287000" />
+      <workItem from="1700090936408" duration="2576000" />
+      <workItem from="1700173565149" duration="3104000" />
     </task>
+    <task id="LOCAL-00001" summary="exercicio">
+      <option name="closed" value="true" />
+      <created>1699318423277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699318423277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,5 +206,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="exercicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercicio" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/carros$CarroTest_deveAcelerarCorretamente.ic" NAME="CarroTest.deveAcelerarCorretamente Coverage Results" MODIFIED="1700092191478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/carros$CarroTest.ic" NAME="CarroTest Coverage Results" MODIFIED="1700181589808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
   </component>
 </project>

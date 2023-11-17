@@ -1,24 +1,24 @@
 package model;
 
 import model.Car;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class CarroTest {
 
-    // GRUPO: Camila, Pedro Henrique, Adir e Lucas Vanzella
     @Test
     public void deveIniciarDesligado(){
         Car carro = new Car();
 
-        Assert.assertFalse(carro.getLigado());
+
+        Assertions.assertFalse(carro.getLigado());
     }
     @Test
     public void deveIniciarComVelocidadeZero(){
         Car carro = new Car();
         // When (Quando)
         // Then (Então)
-        Assert.assertEquals((Integer) 0, carro.getVelocidadeAtual());
+        Assertions.assertEquals((Integer) 0, carro.getVelocidadeAtual());
     }
     @Test
     public void deveLigarCorretamente(){
@@ -28,7 +28,7 @@ public class CarroTest {
         carro.ligar();
 
 
-        Assert.assertTrue(carro.getLigado());
+        Assertions.assertTrue(carro.getLigado());
     }
     @Test
     public void deveDesligarCorretamenteUmCarroLigado(){
@@ -38,8 +38,7 @@ public class CarroTest {
         carro.ligar();
         carro.desligar();
 
-
-        Assert.assertFalse(carro.getLigado());
+        Assertions.assertFalse(carro.getLigado());
     }
     @Test
     public void deveAcelerarCorretamente(){
@@ -48,7 +47,7 @@ public class CarroTest {
         carro.acelerar(10);
 
 
-        Assert.assertEquals((Integer) 10, carro.getVelocidadeAtual());
+        Assertions.assertEquals((Integer) 10, carro.getVelocidadeAtual());
     }
     @Test
     public void naoUltrapassaVelocidadeMaxima(){
@@ -61,7 +60,7 @@ public class CarroTest {
         carro.acelerar(100);
 
 
-        Assert.assertEquals((Integer) 200, carro.getVelocidadeAtual());
+        Assertions.assertEquals((Integer) 200, carro.getVelocidadeAtual());
     }
 
     @Test
@@ -71,7 +70,28 @@ public class CarroTest {
         carro.acelerar(100);
         carro.frear(50);
         carro.frear(51);
-        Assert.assertEquals((Integer) 0, carro.getVelocidadeAtual());
+        Assertions.assertEquals((Integer) 0, carro.getVelocidadeAtual());
+    }
+
+    @Test
+    public void testaMarcaIgual(){
+        Car carro1 = new Car("fiat", "uno");
+        Car carro2 = new Car("fiat", "uno");
+        Assertions.assertEquals(carro1, carro2);
+    }
+
+    @Test
+    public void aoTrancarUmCarroJaTrancadoNaoDeveFazerNada() {
+        // Given
+        Car carro = new Car();
+        carro.ligar();
+
+        // When
+        carro.trancar();
+        carro.trancar();
+
+        // Then
+        Assertions.assertEquals(true, carro.getTrancado());
     }
 
 }
